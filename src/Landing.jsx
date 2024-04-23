@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom"
+
 function Landing() {
     return (
         <div className="grid gap-6 mx-40">
             <div className="flex justify-between">
                 <a href="">Logo</a>
                 <div className="flex gap-2">
-                    <a href="">link 1</a>
+                    <Link to="/projects">Projects</Link>
                     <a href="">link 2</a>
                     <a href="">link 3</a>
                 </div>
