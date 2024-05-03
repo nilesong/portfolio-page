@@ -3,6 +3,9 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Landing from "./Landing";
 import Projects from "./Projects"
+import About from "./About"
+import Popup from "./Popup";
+import Contact from "./Contact"
 import './index.css'
 
 const router = createBrowserRouter([
@@ -13,6 +16,18 @@ const router = createBrowserRouter([
   {
     path: "projects/",
     element: <Projects />,
+  },
+  {
+    path: "about/",
+    element: <About />,
+  },
+  {
+    path: "popup/",
+    element: <Popup />,
+  },
+  {
+    path: "contact/",
+    element: <Contact />,
   },
 ]);
 
