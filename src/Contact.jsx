@@ -10,8 +10,9 @@ function Contact(){
                 <input type="text" placeholder="Name" />
                 <input type="email" placeholder="Email" />
                 <textarea name="" id="" placeholder="Message"></textarea>
-                <button>Send Message</button>
+                <button className="border border-black rounded-full transition ease-in-out duration-300 hover:bg-red-400">Send Message</button>
             </form>
+            <div className="absolute bottom-0">MADE BY NEIL ONG</div>
         </div>
     )
 }
