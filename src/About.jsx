@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom"
+import { useState } from "react";
 
 function About (){
+    const [state, setState] = useState(true);
+
+    const handleMove = () =>{
+        setState(false);
+    }
+
+    const handleLeave = () =>{
+        setState(true);
+    }
+
     return(
         <div className="grid gap-6 mx-40">
         <Link to="/">Home</Link>
@@ -9,12 +20,30 @@ function About (){
                 <h1>Frontend Development</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum repellat omnis, dignissimos quia porro. Cupiditate aspernatur velit porro labore, maxime, eligendi unde rerum necessitatibus magnam natus quod temporibus enim!</p>
                 <div className="flex flex-wrap items-center justify-around">                
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 1</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 2</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 3</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 4</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 5</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 6</div>
+                    <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-black flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
+                        {state && <img className="h-10 w-10" src="./src/assets/html.svg" alt="HTML"/>}
+                        {!state && <span>HTML</span>}
+                    </div>
+                    <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-black flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
+                        {state && <img className="h-10 w-10" src="./src/assets/css.svg" alt="CSS"/>}
+                        {!state && <span>CSS</span>}
+                    </div>
+                    <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-black flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
+                        {state && <img className="h-10 w-10" src="./src/assets/javascript.svg" alt="Javascript"/>}
+                        {!state && <span>Javascrippt</span>}
+                    </div>
+                    <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-black flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
+                        {state && <img className="h-10 w-10" src="./src/assets/react.svg" alt="ReactJS"/>}
+                        {!state && <span>React JS</span>}
+                    </div>
+                    <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-black flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
+                        {state && <img className="h-10 w-10" src="./src/assets/tailwind.svg" alt="Tailwind"/>}
+                        {!state && <span>Tailwind</span>}
+                    </div>
+                    <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-black flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
+                        {state && <img className="h-10 w-10" src="./src/assets/github.svg" alt="Github"/>}
+                        {!state && <span>GitHub</span>}
+                    </div>
                 </div>
 
             </div>
@@ -22,12 +51,12 @@ function About (){
                 <h1>Frontend Development</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum repellat omnis, dignissimos quia porro. Cupiditate aspernatur velit porro labore, maxime, eligendi unde rerum necessitatibus magnam natus quod temporibus enim!</p>
                 <div className="flex flex-wrap items-center justify-around">                
-                    <div className="border border-black  transition ease-in-out duration-300 hover:scale-110">SKILL 1</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 2</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 3</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 4</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 5</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 6</div>
+                    <div className="border border-black  transition ease-in-out duration-300 hover:scale-110"><img src="./src/assets/github.svg" alt="Github"/></div>
+                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110"><img src="./src/assets/github.svg" alt="Github"/></div>
+                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110"><img src="./src/assets/github.svg" alt="Github"/></div>
+                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110"><img src="./src/assets/github.svg" alt="Github"/></div>
+                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110"><img src="./src/assets/github.svg" alt="Github"/></div>
+                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110"><img src="./src/assets/github.svg" alt="Github"/></div>
                 </div>
             </div>
             
@@ -35,12 +64,12 @@ function About (){
                 <h1>Frontend Development</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum repellat omnis, dignissimos quia porro. Cupiditate aspernatur velit porro labore, maxime, eligendi unde rerum necessitatibus magnam natus quod temporibus enim!</p>
                 <div className="flex flex-wrap items-center justify-around">                
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 1</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 2</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 3</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 4</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 5</div>
-                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110">SKILL 6</div>
+                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110"><img src="./src/assets/github.svg" alt="Github"/></div>
+                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110"><img src="./src/assets/github.svg" alt="Github"/></div>
+                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110"><img src="./src/assets/github.svg" alt="Github"/></div>
+                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110"><img src="./src/assets/github.svg" alt="Github"/></div>
+                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110"><img src="./src/assets/github.svg" alt="Github"/></div>
+                    <div className="border border-black transition ease-in-out duration-300 hover:scale-110"><img src="./src/assets/github.svg" alt="Github"/></div>
                 </div>
             </div>
         </div>

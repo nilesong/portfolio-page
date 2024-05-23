@@ -15,19 +15,15 @@ function Landing() {
             <div className="grid grid-cols-2">
                 <div>picture</div>
                 <div className="grid grid-rows-3">
-                    <h1>Hi I'm Neil Ong</h1>
+                    <h1>Hi I&apos;m Neil Ong</h1>
                     <p>Fullstack Developer</p>
                     <div className="grid grid-cols-2 gap-1">
                         <button className="border border-black rounded-full transition ease-in-out duration-300 hover:bg-red-400">Hire Me</button>
                         <button className="border border-black rounded-full transition ease-in-out duration-300 hover:bg-red-400">Hire Me</button>
                     </div>
                     <div className="grid grid-cols-2">
-                        <a href=""><img className="hover:fill-red-400" src="./src/assets/icons8-linkedin.svg" alt="LinkedIn" /></a>
-                        <a href=""><img src="a" alt="GitHub" /></a>
-                        <svg>
-                            <use xlinkHref="./src/assets/icons8-linkedin.svg#test"></use>
-                        </svg>
-
+                        <a href=""><img className="h-10 w-10" src="./src/assets/linkedin.svg" alt="LinkedIn"/></a>
+                        <a href=""><img className="h-10 w-10" src="./src/assets/github.svg" alt="Github"/></a>
                     </div>
                 </div>
             </div>
