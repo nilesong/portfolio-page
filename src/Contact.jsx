@@ -3,7 +3,15 @@ import { Link } from "react-router-dom";
 function Contact(){
     return(
         <div className="grid gap-6 mx-40">
-            <Link to="/">HOME</Link>
+            <div className="sticky top-0 flex justify-between">
+                <a href="">Logo</a>
+                <div className="flex gap-2">
+                    <Link to="/">Home</Link>
+                    <Link to="/projects">Projects</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/contact">Contact</Link>
+                </div>
+            </div>
             <p>You can reach me directly via email@email.com</p>
 
             <form action="" className="grid grid-rows-4 gap-4">

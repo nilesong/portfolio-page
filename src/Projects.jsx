@@ -11,10 +11,18 @@ function Projects (){
 
     return (
         <div className="grid gap-6 mx-40">
-            <Link to="/">HOME</Link>
+            <div className="sticky top-0 flex justify-between">
+                <a href="">Logo</a>
+                <div className="flex gap-2">
+                    <Link to="/">Home</Link>
+                    <Link to="/projects">Projects</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/contact">Contact</Link>
+                </div>
+            </div>
             <Link to="/popup/">Popup</Link>
             <h1>PROJECTS</h1>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 gap-12">
                 <div onClick={handleClick} className="border border-black grid grid-rows-3 items-center transition ease-in-out duration-300 hover:scale-110">
                     <img className="scale-75" src="./src/assets/project1.png" alt="Project 1" />
                     <h1>PROJECT NAME</h1>
