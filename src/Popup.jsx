@@ -7,14 +7,14 @@ function Popup({trigger, setTrigger}){
         trigger: PropTypes.bool.isRequired,
         setTrigger: PropTypes.bool,
     }
-    const [state, setState] = useState(true);
+    const [show, setShow] = useState(true);
 
     const handleMove = () =>{
-        setState(false);
+        setShow(false);
     }
 
     const handleLeave = () =>{
-        setState(true);
+        setShow(true);
     }
 
     const handleClose = ()=>{
@@ -24,9 +24,13 @@ function Popup({trigger, setTrigger}){
     return (
         (trigger &&
             <div className="fixed top-0 left-0 w-full h-lvh flex justify-center align-center bg-gray-900/50">
-                <div className="border border-black">
+                <div className="border border-black bg-pdarkgray text-pgray">
                     {/* PROJECT NAME & SUMMARY */}
+                    <div className="flex items-center justify-between">
                     <h1>PROJECT NAME</h1>
+                    <button onClick={handleClose}><img className="h-7 w-7" src="./src/assets/github.svg" alt="Github"/></button>
+                    </div>
+
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At tempore natus quasi voluptatum animi eius dignissimos, facilis deserunt autem aspernatur commodi in rem quaerat tempora nulla nesciunt expedita, tenetur placeat.</p>
 
                     {/* MADE WITH */}
@@ -34,16 +38,16 @@ function Popup({trigger, setTrigger}){
                         <h2>MADE WITH</h2>
                         <div className="flex flex-wrap items-center justify-around">                
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-black flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
-                                {state && <img className="h-10 w-10" src="./src/assets/html.svg" alt="HTML"/>}
-                                {!state && <span>HTML</span>}
+                                {show && <img className="h-10 w-10" src="./src/assets/html.svg" alt="HTML"/>}
+                                {!show && <span>HTML</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-black flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
-                                {state && <img className="h-10 w-10" src="./src/assets/css.svg" alt="CSS"/>}
-                                {!state && <span>CSS</span>}
+                                {show && <img className="h-10 w-10" src="./src/assets/css.svg" alt="CSS"/>}
+                                {!show && <span>CSS</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-black flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
-                                {state && <img className="h-10 w-10" src="./src/assets/javascript.svg" alt="Javascript"/>}
-                                {!state && <span>Javascript</span>}
+                                {show && <img className="h-10 w-10" src="./src/assets/javascript.svg" alt="Javascript"/>}
+                                {!show && <span>Javascript</span>}
                             </div>
                         </div>
                     </div>
@@ -63,7 +67,6 @@ function Popup({trigger, setTrigger}){
                              <span>Github</span>
                         </a>
                     </div>
-                    <button onClick={handleClose}>Close</button>
                 </div>
             </div>
         )
