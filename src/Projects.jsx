@@ -13,7 +13,7 @@ function Projects (){
         <>
             <div className="grid gap-6 mx-40">
                 <div className="sticky top-0 flex justify-between">
-                    <a href=""><img className="h-10 w-10" src="./src/assets/github.svg" alt="Github"/></a>
+                    <a href=""><img className="h-10 w-10" src="./src/assets/close.svg" alt="Close"/></a>
                     <div className="flex gap-2 text-pgray">
                         <Link className="hover:underline hover:text-pteal" to="/">Home</Link>
                         <Link className="hover:underline hover:text-pteal" to="/projects">Projects</Link>
