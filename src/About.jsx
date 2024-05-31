@@ -61,23 +61,23 @@ function About (){
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum repellat omnis, dignissimos quia porro. Cupiditate aspernatur velit porro labore, maxime, eligendi unde rerum necessitatibus magnam natus quod temporibus enim!</p>
                         <div className="flex flex-wrap items-center justify-around">                
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
-                                {state && <img className="h-10 w-10" src="./src/assets/html.svg" alt="HTML"/>}
+                                {state && <img className="h-10 w-10" src="./src/assets/linux.svg" alt="HTML"/>}
                                 {!state && <span>HTML</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
-                                {state && <img className="h-10 w-10" src="./src/assets/css.svg" alt="CSS"/>}
+                                {state && <img className="h-10 w-10" src="./src/assets/mongodb.svg" alt="CSS"/>}
                                 {!state && <span>CSS</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
-                                {state && <img className="h-10 w-10" src="./src/assets/javascript.svg" alt="Javascript"/>}
+                                {state && <img className="h-10 w-10" src="./src/assets/nodejs.svg" alt="Javascript"/>}
                                 {!state && <span>Javascrippt</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
-                                {state && <img className="h-10 w-10" src="./src/assets/react.svg" alt="ReactJS"/>}
+                                {state && <img className="h-10 w-10" src="./src/assets/npm.svg" alt="ReactJS"/>}
                                 {!state && <span>React JS</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
-                                {state && <img className="h-10 w-10" src="./src/assets/tailwind.svg" alt="Tailwind"/>}
+                                {state && <img className="h-10 w-10" src="./src/assets/postman.svg" alt="Tailwind"/>}
                                 {!state && <span>Tailwind</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
