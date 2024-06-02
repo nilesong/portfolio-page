@@ -23,12 +23,12 @@ function Popup({trigger, setTrigger}){
 
     return (
         (trigger &&
-            <div className="fixed top-0 left-0 w-full h-lvh flex justify-center align-center bg-gray-900/50">
-                <div className="border border-black bg-pdarkgray text-pgray">
+            <div className="fixed top-0 left-0 w-full h-lvh flex justify-center bg-gray-900/50">
+                <div className="border border-black bg-pdarkgray w-3/6 h-3/6 mt-10 text-pgray">
                     {/* PROJECT NAME & SUMMARY */}
                     <div className="flex items-center justify-between">
                     <h1>PROJECT NAME</h1>
-                    <button onClick={handleClose}><img className="h-7 w-7" src="./src/assets/github.svg" alt="Github"/></button>
+                    <button onClick={handleClose}><img className="h-7 w-7" src="./src/assets/close.svg" alt="Close"/></button>
                     </div>
 
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At tempore natus quasi voluptatum animi eius dignissimos, facilis deserunt autem aspernatur commodi in rem quaerat tempora nulla nesciunt expedita, tenetur placeat.</p>

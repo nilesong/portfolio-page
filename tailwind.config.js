@@ -12,6 +12,13 @@ export default {
         'pgray': '#C5C6C7',
         'pteal': '#66FCF1',
         'pdarkteal': '#45A29E',
+      },
+      fontFamily: {
+        space: "Space Mono",
+        chivo: "Chivo"
+      },
+      gridTemplateRows: {
+        'project': '1fr 0.1fr 0.5fr'
       }
     },
   },
