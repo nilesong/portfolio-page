@@ -21,16 +21,18 @@ function Landing() {
                             <Link to="/contact"><button className="w-3/6 h-full bg-pdarkgray border border-black rounded-full transition ease-in-out duration-300 hover:bg-pteal hover:text-black">Hire Me</button></Link> 
                             <div className="flex gap-3">
                                 <a href=""><img className="h-10 w-10" src="./src/assets/linkedin.svg" alt="LinkedIn"/></a>
-                                <a href=""><img className="h-10 w-10" src="./src/assets/github.svg" alt="Github"/></a>
+                                <a href="https://github.com/nilesong"><img className="h-10 w-10" src="./src/assets/github.svg" alt="Github"/></a>
                             </div>
 
                         </div>
                     </div>
                 </div>       
             </div>
+
+            {/* FOOTER */}
             <div className="fixed bottom-0 w-full flex align-center justify-center gap-2 bg-pdarkgray text-pgray">
                 <div>MADE BY NEIL ONG</div>
-                <a href=""><img className="h-5 w-5" src="./src/assets/github.svg" alt="Github"/></a>
+                <a href="https://github.com/nilesong"><img className="h-5 w-5" src="./src/assets/github.svg" alt="Github"/></a>
             </div>
             
         </>

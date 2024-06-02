@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Landing from "./Landing";
 import Projects from "./Projects"
 import About from "./About"
-import Popup from "./Popup";
 import Contact from "./Contact"
 import './index.css'
 
@@ -20,10 +19,6 @@ const router = createBrowserRouter([
   {
     path: "about/",
     element: <About />,
-  },
-  {
-    path: "popup/",
-    element: <Popup />,
   },
   {
     path: "contact/",

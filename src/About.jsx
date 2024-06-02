@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { useState } from "react";
 
 function About (){
-    const [show, setShow] = useState([true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]);
+    const [show, setShow] = useState([true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]);
 
     const handleMove = (e) =>{
         // Variable initialization
@@ -54,7 +54,7 @@ function About (){
             {/* BODY */}
                 <div className="grid grid-rows-3 gap-4 items-center justify-center mt-10 font-chivo">
                     <div className="flex flex-col gap-3 py-2 border border-pdarkgray rounded-lg bg-pdarkgray text-pgray">
-                        <h1 className="text-3xl underline text-pgray">Frontend Development</h1>
+                        <h1 className="text-3xl underline italic text-pgray">Frontend Development</h1>
                         <div className="grid grid-flow-col grid-rows-2 items-center justify-center gap-6 px-60">                
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110" id="sdiv0">
                                 {show[0] && <img className="h-10 w-10" src="./src/assets/html.svg" alt="HTML"/>}
@@ -84,7 +84,7 @@ function About (){
                     </div>
 
                     <div className="flex flex-col gap-3 py-2 border border-pdarkgray rounded-lg bg-pdarkgray text-pgray">
-                        <h1 className="text-3xl underline text-pgray">Backend Development</h1>
+                        <h1 className="text-3xl underline italic text-pgray">Backend Development</h1>
                         <div className="grid grid-flow-col grid-rows-2 items-center justify-center gap-6">                
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110" id="sdiv6">
                                 {show[6] && <img className="h-10 w-10" src="./src/assets/mongodb.svg" alt="MongoDB"/>}
@@ -103,46 +103,44 @@ function About (){
                                 {!show[9] && <span>Postman</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110" id="sdiv10">
-                                {show[10] && <img className="h-10 w-10" src="./src/assets/github.svg" alt="Github"/>}
-                                {!show[10] && <span>GitHub</span>}
-                            </div>
-                            <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110" id="sdiv11">
-                                {show[11] && <img className="h-10 w-10" src="./src/assets/express.svg" alt="ExpressJS"/>}
-                                {!show[11] && <span>ExpressJS</span>}
+                                {show[10] && <img className="h-10 w-10" src="./src/assets/express.svg" alt="ExpressJS"/>}
+                                {!show[10] && <span>ExpressJS</span>}
                             </div>
                         </div>
                     </div>
 
                     <div className="flex flex-col gap-3 py-2 border border-pdarkgray rounded-lg bg-pdarkgray text-pgray">
-                        <h1 className="text-3xl underline text-pgray">Other Tools</h1>
+                        <h1 className="text-3xl underline italic text-pgray">Other Tools</h1>
                         <div className="grid grid-flow-col grid-rows-2 items-center justify-center gap-6">                
+                            <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110" id="sdiv11">
+                                {show[11] && <img className="h-10 w-10" src="./src/assets/linux.svg" alt="Linux"/>}
+                                {!show[11] && <span>Linux</span>}
+                            </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110" id="sdiv12">
-                                {show[12] && <img className="h-10 w-10" src="./src/assets/linux.svg" alt="Linux"/>}
-                                {!show[12] && <span>Linux</span>}
+                                {show[12] && <img className="h-10 w-10" src="./src/assets/vscode.svg" alt="VS Code"/>}
+                                {!show[12] && <span>VS Code</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110" id="sdiv13">
-                                {show[13] && <img className="h-10 w-10" src="./src/assets/vscode.svg" alt="VS Code"/>}
-                                {!show[13] && <span>VS Code</span>}
+                                {show[13] && <img className="h-10 w-10" src="./src/assets/github.svg" alt="GitHub"/>}
+                                {!show[13] && <span>GitHub</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110" id="sdiv14">
-                                {show[14] && <img className="h-10 w-10" src="./src/assets/github.svg" alt="GitHub"/>}
-                                {!show[14] && <span>GitHub</span>}
+                                {show[14]  && <img className="h-10 w-10" src="./src/assets/chrome.svg" alt="Google Chrome"/>}
+                                {!show[14] && <span>Chrome</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110" id="sdiv15">
-                                {show[15]  && <img className="h-10 w-10" src="./src/assets/chrome.svg" alt="Google Chrome"/>}
-                                {!show[15] && <span>Chrome</span>}
-                            </div>
-                            <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-pblack rounded-lg flex items-center justify-center transition ease-in-out duration-300 hover:scale-110" id="sdiv16">
-                                {show[16] && <img className="h-10 w-10" src="./src/assets/firefox.svg" alt="Mozilla Firefox"/>}
-                                {!show[16] && <span>Firefox</span>}
+                                {show[15] && <img className="h-10 w-10" src="./src/assets/firefox.svg" alt="Mozilla Firefox"/>}
+                                {!show[15] && <span>Firefox</span>}
                             </div>
                         </div>
                     </div>                                 
                 </div>
             </div>
+
+            {/* FOOTER */}
             <div className="fixed bottom-0 w-full flex align-center justify-center gap-2 bg-pdarkgray text-pgray">
             <div>MADE BY NEIL ONG</div>
-            <a href=""><img className="h-5 w-5" src="./src/assets/github.svg" alt="Github"/></a>
+            <a href="https://github.com/nilesong"><img className="h-5 w-5" src="./src/assets/github.svg" alt="Github"/></a>
             </div>
             </>
     )
