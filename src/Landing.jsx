@@ -20,8 +20,8 @@ function Landing() {
                         <div className="grid grid-rows-2 gap-1">
                             <Link to="/contact"><button className="w-3/6 h-full bg-pdarkgray border border-black rounded-full transition ease-in-out duration-300 hover:bg-pteal hover:text-black">Hire Me</button></Link> 
                             <div className="flex gap-3">
-                                <a href="https://www.linkedin.com/in/neil-ong-a17a70141" target="_blank"><img className="h-10 w-10" src="./public/assets/linkedin.svg" alt="LinkedIn"/></a>
-                                <a href="https://github.com/nilesong" target="_blank"><img className="h-10 w-10" src="./public/assets/github.svg" alt="Github"/></a>
+                                <a href="https://www.linkedin.com/in/neil-ong-a17a70141" target="_blank"><img className="h-10 w-10" src="../assets/linkedin.svg" alt="LinkedIn"/></a>
+                                <a href="https://github.com/nilesong" target="_blank"><img className="h-10 w-10" src="../assets/github.svg" alt="Github"/></a>
                             </div>
 
                         </div>

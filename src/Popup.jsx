@@ -29,7 +29,7 @@ function Popup({trigger, setTrigger}){
                     {/* PROJECT NAME & SUMMARY */}
                     <div className="flex items-center justify-between">
                     <h1>PROJECT NAME</h1>
-                    <button onClick={handleClose}><img className="h-7 w-7" src="./public/assets/close.svg" alt="Close"/></button>
+                    <button onClick={handleClose}><img className="h-7 w-7" src="../assets/close.svg" alt="Close"/></button>
                     </div>
 
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At tempore natus quasi voluptatum animi eius dignissimos, facilis deserunt autem aspernatur commodi in rem quaerat tempora nulla nesciunt expedita, tenetur placeat.</p>
@@ -39,15 +39,15 @@ function Popup({trigger, setTrigger}){
                         <h2>MADE WITH</h2>
                         <div className="flex flex-wrap items-center justify-around">                
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-black flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
-                                {show && <img className="h-10 w-10" src="./public/assets/html.svg" alt="HTML"/>}
+                                {show && <img className="h-10 w-10" src="../assets/html.svg" alt="HTML"/>}
                                 {!show && <span>HTML</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-black flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
-                                {show && <img className="h-10 w-10" src="./public/assets/css.svg" alt="CSS"/>}
+                                {show && <img className="h-10 w-10" src="../assets/css.svg" alt="CSS"/>}
                                 {!show && <span>CSS</span>}
                             </div>
                             <div onMouseOver={handleMove} onMouseLeave={handleLeave} className="w-32 h-14 border border-black flex items-center justify-center transition ease-in-out duration-300 hover:scale-110">
-                                {show && <img className="h-10 w-10" src="./public/assets/javascript.svg" alt="Javascript"/>}
+                                {show && <img className="h-10 w-10" src="../assets/javascript.svg" alt="Javascript"/>}
                                 {!show && <span>Javascript</span>}
                             </div>
                         </div>
@@ -57,13 +57,13 @@ function Popup({trigger, setTrigger}){
                     <div className="grid grid-flow-col grid-cols-2 gap-4">
                         <a className="flex flex-wrap items-center justify-center gap-1 border border-black" href="">
                              <div>
-                                  <img className="h-6 w-6" src="./public/assets/github.svg" alt="Github" />
+                                  <img className="h-6 w-6" src="../assets/github.svg" alt="Github" />
                               </div>
                              <span>Github</span>
                         </a>
                         <a className="flex flex-wrap items-center justify-center gap-1 border border-black" href="">
                              <div>
-                                  <img className="h-6 w-6" src="./public/assets/github.svg" alt="Github" />
+                                  <img className="h-6 w-6" src="../assets/github.svg" alt="Github" />
                               </div>
                              <span>Github</span>
                         </a>
