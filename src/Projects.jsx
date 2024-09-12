@@ -46,8 +46,8 @@ function Projects (){
                             </div>
                         </div>
                         <div className="flex gap-2 px-5 w-full items-center justify-start">
-                            <button className="h-full w-32 border border-black transition ease-in-out duration-300 bg-pdarkteal hover:bg-pteal text-black">DEMO</button>
-                            <a href=""><img className="h-5 w-5" src="./src/assets/github.svg" alt="Github"/></a>
+                            <a href="https://message-board-nn7k.onrender.com/" target="_blank"><button className="h-full w-32 border border-black transition ease-in-out duration-300 bg-pdarkteal hover:bg-pteal text-black">DEMO</button></a>
+                            <a href="https://github.com/nilesong/message-board" target="_blank"><img className="h-5 w-5" src="./src/assets/github.svg" alt="Github"/></a>
                         </div>
                     </div>
 
@@ -73,8 +73,8 @@ function Projects (){
                             </div>
                         </div>
                         <div className="flex gap-2 px-5 w-full items-center justify-start">
-                            <button className="h-full w-32 border border-black transition ease-in-out duration-300 bg-pdarkteal hover:bg-pteal text-black">DEMO</button>
-                            <a href=""><img className="h-5 w-5" src="./src/assets/github.svg" alt="Github"/></a>
+                            <a href="https://nilesong.github.io/weather-app/" target="_blank"><button className="h-full w-32 border border-black transition ease-in-out duration-300 bg-pdarkteal hover:bg-pteal text-black">DEMO</button></a>
+                            <a href="https://github.com/nilesong/weather-app" target="_blank"><img className="h-5 w-5" src="./src/assets/github.svg" alt="Github"/></a>
                         </div>
                     </div>
                 </div>

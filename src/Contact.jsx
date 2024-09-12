@@ -49,7 +49,7 @@ function Contact(){
                         <h1 className="text-7xl font-extrabold">You can reach me directly:</h1>
                         <div>
                             <h2 className="text-2xl font-extrabold">Email</h2>
-                            <p>email@email.com</p>
+                            <p>neilong.app@gmail.com</p>
                         </div>
 
                     
