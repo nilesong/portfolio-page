@@ -69,7 +69,7 @@ function Contact(){
             {/* FOOTER */}
             <div className="fixed bottom-0 w-full flex align-center justify-center gap-2 bg-pdarkgray text-pgray">
                 <div>MADE BY NEIL ONG</div>
-                <a href="https://github.com/nilesong"><img className="h-5 w-5" src="./src/assets/github.svg" alt="Github"/></a>
+                <a href="https://github.com/nilesong"><img className="h-5 w-5" src="./public/assets/github.svg" alt="Github"/></a>
             </div>
         </>
     )
